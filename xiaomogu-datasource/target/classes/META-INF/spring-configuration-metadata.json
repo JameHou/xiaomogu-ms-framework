@@ -1,0 +1,17 @@
+{
+  "groups": [
+    {
+      "name": "pagehelper",
+      "type": "com.github.xiaomogu.datasource.mybatis.PageHelperProperties",
+      "sourceType": "com.github.xiaomogu.datasource.mybatis.PageHelperProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "pagehelper.properties",
+      "type": "java.util.Properties",
+      "sourceType": "com.github.xiaomogu.datasource.mybatis.PageHelperProperties"
+    }
+  ],
+  "hints": []
+}

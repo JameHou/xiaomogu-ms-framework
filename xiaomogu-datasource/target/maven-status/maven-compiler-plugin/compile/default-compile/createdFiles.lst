@@ -1,0 +1,16 @@
+com\github\xiaomogu\datasource\jdbc\DataSourceProperties$DataSourceBeanCreationException.class
+com\github\xiaomogu\datasource\jdbc\DataSourceProperties.class
+com\github\xiaomogu\datasource\mybatis\MybatisAutoConfiguration$1.class
+com\github\xiaomogu\datasource\mybatis\MybatisProperties.class
+com\github\xiaomogu\datasource\jdbc\DruidPoolConfig.class
+com\github\xiaomogu\datasource\jdbc\DynamicDataSourceAutoConfiguration.class
+META-INF\spring-configuration-metadata.json
+com\github\xiaomogu\datasource\mybatis\PageHelperProperties.class
+com\github\xiaomogu\datasource\ConditionalOnMapProperty.class
+com\github\xiaomogu\datasource\mybatis\MultiMybatisProperties.class
+com\github\xiaomogu\datasource\mybatis\SpringBootVFS.class
+com\github\xiaomogu\datasource\jdbc\HikariPoolConfig.class
+com\github\xiaomogu\datasource\MapPropertyCondition.class
+com\github\xiaomogu\datasource\jdbc\MultiMysqlProperties.class
+com\github\xiaomogu\datasource\mybatis\MybatisAutoConfiguration.class
+com\github\xiaomogu\datasource\mybatis\ConfigurationCustomizer.class

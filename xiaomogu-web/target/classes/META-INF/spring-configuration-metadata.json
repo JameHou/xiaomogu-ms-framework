@@ -1,0 +1,46 @@
+{
+  "groups": [
+    {
+      "name": "mogu-swagger2-web",
+      "type": "com.github.xiaomogu.web.swagger.Swagger2Properties",
+      "sourceType": "com.github.xiaomogu.web.swagger.Swagger2Properties"
+    },
+    {
+      "name": "mogu-web.mvc",
+      "type": "com.github.xiaomogu.web.config.SpringMvcProperties",
+      "sourceType": "com.github.xiaomogu.web.config.SpringMvcProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "mogu-swagger2-web.base-package",
+      "type": "java.lang.String",
+      "sourceType": "com.github.xiaomogu.web.swagger.Swagger2Properties"
+    },
+    {
+      "name": "mogu-swagger2-web.description",
+      "type": "java.lang.String",
+      "sourceType": "com.github.xiaomogu.web.swagger.Swagger2Properties",
+      "defaultValue": "test my swagger api ui"
+    },
+    {
+      "name": "mogu-swagger2-web.title",
+      "type": "java.lang.String",
+      "sourceType": "com.github.xiaomogu.web.swagger.Swagger2Properties",
+      "defaultValue": "My Application Rrestful Apis"
+    },
+    {
+      "name": "mogu-swagger2-web.version",
+      "type": "java.lang.String",
+      "sourceType": "com.github.xiaomogu.web.swagger.Swagger2Properties",
+      "defaultValue": "V2"
+    },
+    {
+      "name": "mogu-web.mvc.payload-length",
+      "type": "java.lang.Integer",
+      "sourceType": "com.github.xiaomogu.web.config.SpringMvcProperties",
+      "defaultValue": 2048
+    }
+  ],
+  "hints": []
+}

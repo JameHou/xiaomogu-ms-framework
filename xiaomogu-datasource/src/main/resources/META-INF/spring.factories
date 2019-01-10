@@ -1,0 +1,4 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.github.xiaomogu.datasource.jdbc.DynamicDataSourceAutoConfiguration,\
+com.github.xiaomogu.datasource.mybatis.MybatisAutoConfiguration
+

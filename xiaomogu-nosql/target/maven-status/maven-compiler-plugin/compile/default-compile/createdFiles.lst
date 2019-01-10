@@ -1,0 +1,3 @@
+com\github\xiaomogu\nosql\redis\CustomRedisCacheWriter.class
+com\github\xiaomogu\nosql\redis\RedisCacheAutoConfiguration.class
+com\github\xiaomogu\nosql\redis\RedisProperties.class

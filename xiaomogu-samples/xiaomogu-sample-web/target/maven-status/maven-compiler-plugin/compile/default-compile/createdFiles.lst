@@ -1,0 +1,9 @@
+com\github\xiaomogu\framework\web\common\CommonProperties.class
+com\github\xiaomogu\framework\web\domain\User.class
+com\github\xiaomogu\framework\web\controller\HelloWorldController.class
+META-INF\spring-configuration-metadata.json
+com\github\xiaomogu\framework\web\job\OrderAutoCancelJob.class
+com\github\xiaomogu\framework\web\dao\read\UserReadMapper.class
+com\github\xiaomogu\framework\web\service\UserService.class
+com\github\xiaomogu\framework\web\ApplicationRun.class
+com\github\xiaomogu\framework\web\dao\write\UserWriteMapper.class

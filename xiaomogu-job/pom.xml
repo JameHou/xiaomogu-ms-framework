@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>xiaomogu-framework</artifactId>
+        <groupId>com.github.xiaomogu.framework</groupId>
+        <version>${revision}</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>xiaomogu-job</artifactId>
+
+    <properties>
+        <shedlock.provider.redis.versioin>2.2.0</shedlock.provider.redis.versioin>
+        <shedlock.spring.version>2.2.0</shedlock.spring.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.github.xiaomogu.framework</groupId>
+            <artifactId>xiaomogu-nosql</artifactId>
+            <version>${revision}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>net.javacrumbs.shedlock</groupId>
+            <artifactId>shedlock-spring</artifactId>
+            <version>${shedlock.spring.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>net.javacrumbs.shedlock</groupId>
+            <artifactId>shedlock-provider-redis-spring</artifactId>
+            <version>${shedlock.provider.redis.versioin}</version>
+        </dependency>
+    </dependencies>
+
+
+</project>
