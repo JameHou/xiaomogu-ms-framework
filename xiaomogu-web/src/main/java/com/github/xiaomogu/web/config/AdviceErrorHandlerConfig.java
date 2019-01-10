@@ -1,6 +1,7 @@
 package com.github.xiaomogu.web.config;
 
 import com.github.xiaomogu.commons.exception.MicroServiceException;
+import com.github.xiaomogu.commons.jackson.RespResultCode;
 import com.github.xiaomogu.commons.jackson.ResponseResult;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;
@@ -22,5 +23,11 @@ public class AdviceErrorHandlerConfig {
         public ResponseResult handlerMicroServiceException(MicroServiceException m){
             return ResponseResult.fail(m.getCode(),m.getMessage());
         }
+    }
+
+    @ExceptionHandler(Throwable.class)
+    public ResponseResult handlerMicroServiceException(Throwable e){
+        log.error("system error ,please call manager ......{}",e);
+        return ResponseResult.fail(RespResultCode.FAIL.getCode(),RespResultCode.FAIL.getMsg());
     }
 }

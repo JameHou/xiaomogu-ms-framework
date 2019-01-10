@@ -37,7 +37,7 @@ public class SpringMvcConfig {
 
     @Bean
     @ConditionalOnClass(OncePerRequestFilter.class)
-    @ConditionalOnProperty(value = "mogu-web.log.enabled", matchIfMissing = true)
+    @ConditionalOnProperty(value = "mogo-web.log.enabled", matchIfMissing = true)
     public FilterRegistrationBean<AccessLogFilter> accessLogFilter(HzJson hzJson,SpringMvcProperties springMvcProperties) {
         FilterRegistrationBean<AccessLogFilter> registration = new FilterRegistrationBean<>(
                 AccessLogFilter.of(springMvcProperties, hzJson));
