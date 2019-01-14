@@ -1,6 +1,6 @@
-D:\project\myGithub\xiaomogu-ms-framework\xiaomogu-commons\src\main\java\com\github\xiaomogu\commons\exception\MicroServiceException.java
-D:\project\myGithub\xiaomogu-ms-framework\xiaomogu-commons\src\main\java\com\github\xiaomogu\commons\jackson\ResponseResult.java
-D:\project\myGithub\xiaomogu-ms-framework\xiaomogu-commons\src\main\java\com\github\xiaomogu\commons\jackson\JsonConfig.java
-D:\project\myGithub\xiaomogu-ms-framework\xiaomogu-commons\src\main\java\com\github\xiaomogu\commons\jackson\HzJson.java
-D:\project\myGithub\xiaomogu-ms-framework\xiaomogu-commons\src\main\java\com\github\xiaomogu\commons\jackson\RespResultCode.java
-D:\project\myGithub\xiaomogu-ms-framework\xiaomogu-commons\src\main\java\com\github\xiaomogu\commons\utils\EnvironmentUtil.java
+D:\project\gitAliyun\xiaomogu-ms-framework\xiaomogu-commons\src\main\java\com\github\xiaomogu\commons\jackson\RespResultCode.java
+D:\project\gitAliyun\xiaomogu-ms-framework\xiaomogu-commons\src\main\java\com\github\xiaomogu\commons\exception\MicroServiceException.java
+D:\project\gitAliyun\xiaomogu-ms-framework\xiaomogu-commons\src\main\java\com\github\xiaomogu\commons\jackson\HzJson.java
+D:\project\gitAliyun\xiaomogu-ms-framework\xiaomogu-commons\src\main\java\com\github\xiaomogu\commons\utils\EnvironmentUtil.java
+D:\project\gitAliyun\xiaomogu-ms-framework\xiaomogu-commons\src\main\java\com\github\xiaomogu\commons\jackson\JsonConfig.java
+D:\project\gitAliyun\xiaomogu-ms-framework\xiaomogu-commons\src\main\java\com\github\xiaomogu\commons\jackson\ResponseResult.java

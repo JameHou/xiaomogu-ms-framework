@@ -5,7 +5,7 @@ import net.javacrumbs.shedlock.core.LockProvider;
 import net.javacrumbs.shedlock.provider.redis.spring.RedisLockProvider;
 import net.javacrumbs.shedlock.spring.annotation.EnableSchedulerLock;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.boot.autoconfigure.AutoConfigureAfter;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnBean;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -21,8 +21,8 @@ import org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler;
  */
 @Configuration
 @ConditionalOnClass({LockProvider.class})
-//@ConditionalOnBean(RedisConnectionFactory.class)
-@AutoConfigureAfter(RedisConnectionFactory.class)
+@ConditionalOnBean(RedisConnectionFactory.class)
+//@AutoConfigureAfter(RedisConnectionFactory.class)
 @EnableScheduling
 @EnableSchedulerLock(defaultLockAtMostFor = "PT10M")
 @Slf4j

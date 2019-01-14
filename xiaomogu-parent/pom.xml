@@ -6,46 +6,56 @@
         <artifactId>xiaomogu-framework</artifactId>
         <groupId>com.github.xiaomogu.framework</groupId>
         <version>${revision}</version>
+        <relativePath>..</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
     <packaging>pom</packaging>
     <artifactId>xiaomogu-parent</artifactId>
 
-    <dependencyManagement>
-        <dependencies>
-            <dependency>
-                <groupId>com.github.xiaomogu.framework</groupId>
-                <artifactId>xiaomogu-web</artifactId>
-                <version>${revision}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.github.xiaomogu.framework</groupId>
-                <artifactId>xiaomogu-datasource</artifactId>
-                <version>${revision}</version>
-            </dependency>
+    <dependencies>
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>${guava.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-configuration-processor</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
 
-            <dependency>
-                <groupId>com.github.xiaomogu.framework</groupId>
-                <artifactId>xiaomogu-nosql</artifactId>
-                <version>${revision}</version>
-            </dependency>
+        <dependency>
+            <groupId>org.zalando</groupId>
+            <artifactId>problem</artifactId>
+            <version>${problem.version}</version>
+        </dependency>
 
-            <dependency>
-                <groupId>com.github.xiaomogu.framework</groupId>
-                <artifactId>xiaomogu-mq</artifactId>
-                <version>${revision}</version>
-            </dependency>
+        <dependency>
+            <groupId>org.zalando</groupId>
+            <artifactId>problem-spring-web</artifactId>
+            <version>${problem.spring.web.version}</version>
+        </dependency>
 
-            <dependency>
-                <groupId>com.github.xiaomogu.framework</groupId>
-                <artifactId>xiaomogu-job</artifactId>
-                <version>${revision}</version>
-            </dependency>
-        </dependencies>
-    </dependencyManagement>
+        <!--性能测试依赖-->
+        <dependency>
+            <groupId>org.databene</groupId>
+            <artifactId>contiperf</artifactId>
+            <version>${contiperf.version}</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>${commons.lang.version}</version>
+        </dependency>
+    </dependencies>
 
 
- <!--   <build>
+    <build>
         <pluginManagement>
             <plugins>
                 <plugin>
@@ -153,5 +163,13 @@
                 </plugin>
             </plugins>
         </pluginManagement>
-    </build>-->
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+
+
 </project>

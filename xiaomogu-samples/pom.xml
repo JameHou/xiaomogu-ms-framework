@@ -14,5 +14,6 @@
         <module>xiaomogu-sample-web</module>
     </modules>
     <artifactId>xiaomogu-samples</artifactId>
+    <version>${revision}</version>
 
 </project>

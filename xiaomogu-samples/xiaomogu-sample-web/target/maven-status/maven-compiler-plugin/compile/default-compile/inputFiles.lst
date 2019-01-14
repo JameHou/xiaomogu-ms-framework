@@ -1,8 +1,8 @@
-D:\project\myGithub\xiaomogu-ms-framework\xiaomogu-samples\xiaomogu-sample-web\src\main\java\com\github\xiaomogu\framework\web\service\UserService.java
-D:\project\myGithub\xiaomogu-ms-framework\xiaomogu-samples\xiaomogu-sample-web\src\main\java\com\github\xiaomogu\framework\web\dao\write\UserWriteMapper.java
-D:\project\myGithub\xiaomogu-ms-framework\xiaomogu-samples\xiaomogu-sample-web\src\main\java\com\github\xiaomogu\framework\web\job\OrderAutoCancelJob.java
-D:\project\myGithub\xiaomogu-ms-framework\xiaomogu-samples\xiaomogu-sample-web\src\main\java\com\github\xiaomogu\framework\web\common\CommonProperties.java
-D:\project\myGithub\xiaomogu-ms-framework\xiaomogu-samples\xiaomogu-sample-web\src\main\java\com\github\xiaomogu\framework\web\controller\HelloWorldController.java
-D:\project\myGithub\xiaomogu-ms-framework\xiaomogu-samples\xiaomogu-sample-web\src\main\java\com\github\xiaomogu\framework\web\ApplicationRun.java
-D:\project\myGithub\xiaomogu-ms-framework\xiaomogu-samples\xiaomogu-sample-web\src\main\java\com\github\xiaomogu\framework\web\dao\read\UserReadMapper.java
-D:\project\myGithub\xiaomogu-ms-framework\xiaomogu-samples\xiaomogu-sample-web\src\main\java\com\github\xiaomogu\framework\web\domain\User.java
+D:\project\gitAliyun\xiaomogu-ms-framework\xiaomogu-samples\xiaomogu-sample-web\src\main\java\com\github\xiaomogu\framework\web\controller\HelloWorldController.java
+D:\project\gitAliyun\xiaomogu-ms-framework\xiaomogu-samples\xiaomogu-sample-web\src\main\java\com\github\xiaomogu\framework\web\ApplicationRun.java
+D:\project\gitAliyun\xiaomogu-ms-framework\xiaomogu-samples\xiaomogu-sample-web\src\main\java\com\github\xiaomogu\framework\web\dao\write\UserWriteMapper.java
+D:\project\gitAliyun\xiaomogu-ms-framework\xiaomogu-samples\xiaomogu-sample-web\src\main\java\com\github\xiaomogu\framework\web\dao\read\UserReadMapper.java
+D:\project\gitAliyun\xiaomogu-ms-framework\xiaomogu-samples\xiaomogu-sample-web\src\main\java\com\github\xiaomogu\framework\web\job\OrderAutoCancelJob.java
+D:\project\gitAliyun\xiaomogu-ms-framework\xiaomogu-samples\xiaomogu-sample-web\src\main\java\com\github\xiaomogu\framework\web\service\UserService.java
+D:\project\gitAliyun\xiaomogu-ms-framework\xiaomogu-samples\xiaomogu-sample-web\src\main\java\com\github\xiaomogu\framework\web\domain\User.java
+D:\project\gitAliyun\xiaomogu-ms-framework\xiaomogu-samples\xiaomogu-sample-web\src\main\java\com\github\xiaomogu\framework\web\common\CommonProperties.java

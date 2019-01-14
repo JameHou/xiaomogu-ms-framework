@@ -3,18 +3,25 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>xiaomogu-framework</artifactId>
         <groupId>com.github.xiaomogu.framework</groupId>
+        <artifactId>xiaomogu-parent</artifactId>
         <version>${revision}</version>
+        <relativePath>../xiaomogu-parent</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>xiaomogu-web</artifactId>
+    <version>${revision}</version>
+
+    <properties>
+        <main.basedir>${basedir}/..</main.basedir>
+        <swagger2.version>2.9.2</swagger2.version>
+        <swagger.ui.version>2.9.2</swagger.ui.version>
+    </properties>
     <dependencies>
         <dependency>
             <groupId>com.github.xiaomogu.framework</groupId>
             <artifactId>xiaomogu-commons</artifactId>
-            <version>${revision}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -24,6 +31,18 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-thymeleaf</artifactId>
+        </dependency>
+
+        <!-- swagger 相关 -->
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
+            <version>${swagger2.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger-ui</artifactId>
+            <version>${swagger.ui.version}</version>
         </dependency>
 
         <!-- spring cloud 相关-->
