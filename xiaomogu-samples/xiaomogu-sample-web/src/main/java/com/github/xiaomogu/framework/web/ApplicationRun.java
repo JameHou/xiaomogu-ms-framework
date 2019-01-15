@@ -9,9 +9,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @SpringBootApplication(exclude = {DataSourceAutoConfiguration.class, DataSourceTransactionManagerAutoConfiguration.class})
 @EnableTransactionManagement
 public class ApplicationRun {
-
     public static void main(String[] args) {
         SpringApplication.run(ApplicationRun.class,args);
     }
-
 }

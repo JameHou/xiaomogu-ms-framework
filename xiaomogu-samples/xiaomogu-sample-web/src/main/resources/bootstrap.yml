@@ -49,9 +49,9 @@ moguMysql:
   readNode:
     name: hikariDataSource
     type: com.zaxxer.hikari.HikariDataSource
-    username: xx
-    password: xxxx
-    url: jdbc:mysql://xx.xx.xxx.xx:3306/houzhen?useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2B8
+    username: xxx
+    password: xxx
+    url: jdbc:mysql://xx.xxx.xxx.xx:3306/houzhen?useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2B8
     hikariPool:
       maximumPoolSize: 30
       connectionInitSql: 'set names utf8mb4;'
@@ -62,8 +62,8 @@ moguMysql:
   writeNode:
     name: hikariDataSource
     type: com.zaxxer.hikari.HikariDataSource
-    username: xx
-    password: xxxx
+    username: xxx
+    password: xxx
     url: jdbc:mysql://xx.xx.xxx.xx:3306/houzhen?useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2B8
     hikariPool:
       maximumPoolSize: 30

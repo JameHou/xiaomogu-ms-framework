@@ -12,8 +12,19 @@
     <packaging>pom</packaging>
     <modules>
         <module>xiaomogu-sample-web</module>
+        <module>xiaomogu-sample-feign</module>
     </modules>
     <artifactId>xiaomogu-samples</artifactId>
     <version>${revision}</version>
+
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>

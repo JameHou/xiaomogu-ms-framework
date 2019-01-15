@@ -1,6 +1,5 @@
 package com.github.xiaomogu.framework.web.controller;
 
-import com.github.xiaomogu.commons.exception.MicroServiceException;
 import com.github.xiaomogu.commons.jackson.ResponseResult;
 import com.github.xiaomogu.framework.web.domain.User;
 import com.github.xiaomogu.framework.web.service.UserService;

@@ -1,0 +1,79 @@
+spring:
+  application:
+    name: feign-sample
+  profiles:
+    active: dev
+#  redis:
+#    cluster.nodes:
+#    - xx.xx.x.xx:7000
+#    - xx.xx.x.xx:7001
+#    - xx.xx.x.xx:7002
+#    lettuce:
+#      pool:
+#        max-active: 10
+#        max-idle: 10
+eureka:
+#  server:
+#    enable-self-preservation: false #服务端关闭自我保护模式
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+server:
+  port: 8083
+logging:
+  file: ${spring.application.name}
+  level:
+    jdbc:
+      sqltiming: INFO
+      audit: 'OFF'
+      resultset: 'OFF'
+      connection: 'OFF'
+      #resultsettable: 'ON'
+      sqlonly: 'OFF'
+
+log4jdbc.sqltiming:
+  dump.sql.maxlinelength: 0
+  warn.threshold: 500   # 500ms 会打印warn级别的日志
+  error.threshold: 1000  # 1000ms 会打印error级别的日志
+
+
+
+mogu-swagger2-web:
+  base-package: "com.github.xiaomogu.framework.feign.controller"
+  title: "Feign 调用测试"
+  version: v2
+  description: "API文档"
+  enabled: true
+
+moguMysql:
+  readNode:
+    name: hikariDataSource
+    type: com.zaxxer.hikari.HikariDataSource
+    username: xxxx
+    password: xxxx
+    url: jdbc:mysql://xx.xx.xxx.xx:3306/houzhen?useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2B8
+    hikariPool:
+      maximumPoolSize: 30
+      connectionInitSql: 'set names utf8mb4;'
+    configLocation: classpath:mapper/mybatis-config.xml
+    mapperLocations: classpath:mapper/read/*.xml
+    mapperScanner: com.github.xiaomogu.framework.feign.dao.read
+    typeAliasesPackage: com.github.xiaomogu.framework.feign.domain
+  writeNode:
+    name: hikariDataSource
+    type: com.zaxxer.hikari.HikariDataSource
+    username: xxxx
+    password: xxxx
+    url: jdbc:mysql://xx.xx.xxx.xx:3306/houzhen?useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2B8
+    hikariPool:
+      maximumPoolSize: 30
+      connectionInitSql: 'set names utf8mb4;'
+    configLocation: classpath:mapper/mybatis-config.xml
+    mapperLocations: classpath:mapper/write/*.xml
+    mapperScanner: com.github.xiaomogu.framework.feign.dao.write
+    typeAliasesPackage: com.github.xiaomogu.framework.feign.domain
+
+test-web:
+  age: 90
+  user-name: swagger two
+  mobile: 188888899900

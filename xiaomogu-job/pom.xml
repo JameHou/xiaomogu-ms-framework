@@ -23,6 +23,7 @@
             <groupId>com.github.xiaomogu.framework</groupId>
             <artifactId>xiaomogu-nosql</artifactId>
             <version>${revision}</version>
+            <optional>true</optional>
         </dependency>
 
         <dependency>
