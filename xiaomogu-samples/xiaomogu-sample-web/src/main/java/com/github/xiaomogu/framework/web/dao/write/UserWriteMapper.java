@@ -11,5 +11,5 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface UserWriteMapper {
 
-    User updateUserById(@Param("uid") Long uid);
+    int updateUserById(@Param("user") User user);
 }

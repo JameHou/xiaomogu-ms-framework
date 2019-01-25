@@ -1,5 +1,7 @@
 package com.github.xiaomogu.framework.web.service;
 
+import com.github.xiaomogu.commons.exception.MicroServiceException;
+import com.github.xiaomogu.commons.jackson.RespResultCode;
 import com.github.xiaomogu.framework.web.dao.read.UserReadMapper;
 import com.github.xiaomogu.framework.web.dao.write.UserWriteMapper;
 import com.github.xiaomogu.framework.web.domain.User;
@@ -26,9 +28,29 @@ public class UserService {
         return readMapper.findUserById(uid);
     }
 
-    @Transactional(value = "writeTx")
-    public User updateUserById(Long uid){
-        return writeMapper.updateUserById(uid);
+   @Transactional(value = "writeNodeTx")
+    public User updateUserById(Long uid,String name,String mobile){
+        /*User user = readMapper.findUserById(uid);
+        user.setName(name);
+        user.setMobile(mobile);
+        int rows = writeMapper.updateUserById(user);
+        if(rows > 0 ){
+            throw new MicroServiceException(RespResultCode.FAIL.getCode(),"回滚测试");
+        }
+        throw new MicroServiceException(RespResultCode.FAIL.getCode(),"修改user失败");*/
+        return updateUserById2( uid, name, mobile);
+    }
+
+    @Transactional(value = "writeNodeTx")
+    public User updateUserById2(Long uid,String name,String mobile){
+        User user = readMapper.findUserById(uid);
+        user.setName(name);
+        user.setMobile(mobile);
+        int rows = writeMapper.updateUserById(user);
+        if(rows > 0 ){
+            throw new MicroServiceException(RespResultCode.FAIL.getCode(),"回滚测试");
+        }
+        throw new MicroServiceException(RespResultCode.FAIL.getCode(),"修改user失败");
     }
 
 }
