@@ -9,7 +9,7 @@
     <relativePath>../xiaomogu-parent</relativePath>
   </parent>
   <groupId>com.github.xiaomogu.framework</groupId>
-  <artifactId>xiaomogu-nosql</artifactId>
+  <artifactId>xiaomogu-wechat</artifactId>
   <version>1.0.2-SNAPSHOT</version>
   <description>xiaomogu-framework</description>
   <dependencies>
@@ -20,15 +20,33 @@
       <scope>compile</scope>
     </dependency>
     <dependency>
-      <groupId>org.springframework.boot</groupId>
-      <artifactId>spring-boot-starter-data-redis</artifactId>
-      <version>2.1.2.RELEASE</version>
+      <groupId>com.github.binarywang</groupId>
+      <artifactId>weixin-java-miniapp</artifactId>
+      <version>3.3.0</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
-      <groupId>org.apache.commons</groupId>
-      <artifactId>commons-pool2</artifactId>
-      <version>2.6.0</version>
+      <groupId>com.github.binarywang</groupId>
+      <artifactId>weixin-java-pay</artifactId>
+      <version>3.3.0</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.github.binarywang</groupId>
+      <artifactId>weixin-java-mp</artifactId>
+      <version>3.3.0</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.github.binarywang</groupId>
+      <artifactId>weixin-java-open</artifactId>
+      <version>3.3.0</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.github.binarywang</groupId>
+      <artifactId>weixin-java-cp</artifactId>
+      <version>3.3.0</version>
       <scope>compile</scope>
     </dependency>
     <dependency>

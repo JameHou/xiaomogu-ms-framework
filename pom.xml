@@ -11,6 +11,7 @@
 		<module>xiaomogu-nosql</module>
 		<module>xiaomogu-job</module>
         <module>xiaomogu-commons</module>
+        <module>xiaomogu-wechat</module>
     </modules>
 	<groupId>com.github.xiaomogu.framework</groupId>
 	<artifactId>xiaomogu-framework</artifactId>
@@ -24,7 +25,7 @@
 		<java.version>11</java.version>
 		<spring.boot.version>2.1.2.RELEASE</spring.boot.version>
 		<spring.cloud.version>Finchley.SR2</spring.cloud.version>
-		<revision>1.0.2-SNAPSHOT</revision>
+		<revision>1.0.2-SNAPSHOT1.0.2-SNAPSHOT</revision>
 		<problem.version>0.22.0</problem.version>
 		<problem.spring.web.version>0.24.0-RC.0</problem.spring.web.version>
 		<contiperf.version>2.3.4</contiperf.version>

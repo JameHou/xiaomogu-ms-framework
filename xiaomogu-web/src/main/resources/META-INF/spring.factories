@@ -2,5 +2,6 @@ org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
 com.github.xiaomogu.web.swagger.Swagger2Configuration,\
 com.github.xiaomogu.web.config.AdviceErrorHandlerConfig,\
 com.github.xiaomogu.web.config.SpringMvcConfig,\
-com.github.xiaomogu.web.config.SpringContextConfig
+com.github.xiaomogu.web.config.SpringContextConfig,\
+com.github.xiaomogu.web.okhttp.OkHttp3AutoConfiguration
 

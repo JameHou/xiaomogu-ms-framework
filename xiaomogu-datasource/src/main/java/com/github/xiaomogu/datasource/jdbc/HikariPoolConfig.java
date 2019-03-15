@@ -1,6 +1,5 @@
 package com.github.xiaomogu.datasource.jdbc;
 
-import com.zaxxer.hikari.HikariConfig;
 import lombok.Data;
 
 /**

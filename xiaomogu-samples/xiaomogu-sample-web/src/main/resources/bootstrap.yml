@@ -3,6 +3,11 @@ spring:
     name: web-sample
   profiles:
     active: dev
+#  aop:
+#    auto: true
+  kafka:
+    producer:
+      acks: 1 # 可填 【0  1 all(-1)】 ,0 消息发送给borker之后，不需要broker的确认，性能较高，数据可能会有丢失
 #  redis:
 #    cluster.nodes:
 #    - xx.xx.x.xx:7000
@@ -16,10 +21,10 @@ eureka:
 #  server:
 #    enable-self-preservation: false #服务端关闭自我保护模式
   client:
-    register-with-eureka: true
-    fetch-registry: true
+    register-with-eureka: false
+    fetch-registry: false
 server:
-  port: 8082
+  port: 8090
 logging:
   file: ${spring.application.name}
   level:
@@ -30,13 +35,10 @@ logging:
       connection: 'OFF'
       #resultsettable: 'ON'
       sqlonly: 'OFF'
-
 log4jdbc.sqltiming:
   dump.sql.maxlinelength: 0
   warn.threshold: 500   # 500ms 会打印warn级别的日志
   error.threshold: 1000  # 1000ms 会打印error级别的日志
-
-
 
 mogu-swagger2-web:
   base-package: "com.github.xiaomogu.framework.web.controller"
@@ -51,7 +53,7 @@ moguMysql:
     type: com.zaxxer.hikari.HikariDataSource
     username: xxx
     password: xxx
-    url: jdbc:mysql://xx.xxx.xxx.xx:3306/houzhen?useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2B8
+    url: jdbc:mysql://xx.xx.xx.xx:3306/xxxx?useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2B8
     hikariPool:
       maximumPoolSize: 30
       connectionInitSql: 'set names utf8mb4;'
@@ -64,7 +66,7 @@ moguMysql:
     type: com.zaxxer.hikari.HikariDataSource
     username: xxx
     password: xxx
-    url: jdbc:mysql://xx.xx.xxx.xx:3306/houzhen?useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2B8
+    url: jdbc:mysql://xx.xx.xx.xx:3306/xxxx/houzhen?useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2B8
     hikariPool:
       maximumPoolSize: 30
       connectionInitSql: 'set names utf8mb4;'
@@ -77,3 +79,5 @@ test-web:
   age: 90
   user-name: swagger one
   mobile: 188888899900
+
+

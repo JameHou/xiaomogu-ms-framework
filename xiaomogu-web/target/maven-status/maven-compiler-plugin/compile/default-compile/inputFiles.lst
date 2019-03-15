@@ -1,6 +1,7 @@
 D:\project\gitAliyun\xiaomogu-ms-framework\xiaomogu-web\src\main\java\com\github\xiaomogu\web\config\SpringMvcProperties.java
 D:\project\gitAliyun\xiaomogu-ms-framework\xiaomogu-web\src\main\java\com\github\xiaomogu\web\swagger\Swagger2Configuration.java
 D:\project\gitAliyun\xiaomogu-ms-framework\xiaomogu-web\src\main\java\com\github\xiaomogu\web\log\AccessLogFilter.java
+D:\project\gitAliyun\xiaomogu-ms-framework\xiaomogu-web\src\main\java\com\github\xiaomogu\web\okhttp\OkHttp3AutoConfiguration.java
 D:\project\gitAliyun\xiaomogu-ms-framework\xiaomogu-web\src\main\java\com\github\xiaomogu\web\config\AdviceErrorHandlerConfig.java
 D:\project\gitAliyun\xiaomogu-ms-framework\xiaomogu-web\src\main\java\com\github\xiaomogu\web\config\SpringMvcConfig.java
 D:\project\gitAliyun\xiaomogu-ms-framework\xiaomogu-web\src\main\java\com\github\xiaomogu\web\config\SpringContextConfig.java

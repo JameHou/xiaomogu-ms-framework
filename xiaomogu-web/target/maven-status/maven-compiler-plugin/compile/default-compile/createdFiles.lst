@@ -5,6 +5,7 @@ META-INF\spring-configuration-metadata.json
 com\github\xiaomogu\web\config\SpringMvcConfig.class
 com\github\xiaomogu\web\utils\IpUtil.class
 com\github\xiaomogu\web\utils\WebLogUtils.class
+com\github\xiaomogu\web\okhttp\OkHttp3AutoConfiguration.class
 com\github\xiaomogu\web\config\AdviceErrorHandlerConfig$MicroServiceExceptionConfiguration.class
 com\github\xiaomogu\web\config\SpringMvcProperties.class
 com\github\xiaomogu\web\log\AccessLogFilter.class
