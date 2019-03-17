@@ -82,9 +82,18 @@ public class HelloWorldController {
     })
     @GetMapping(value = "/getUserById",produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
     public ResponseResult<User> getUserById(@RequestParam("uid")  @NotNull(message = "请填写年龄")Long uid){
+
         try {
+            for(int i = 0;i < 2; i++){
+                new Thread(()->{
+                    User user = userService.findUserById(uid);
+                    System.out.println(user);
+                }).start();
+            }
            // log.info("restTemplate info {}",restTemplate);
-            return ResponseResult.success(userService.findUserById(uid));
+            return ResponseResult.success(new User());
+            //return ResponseResult.success(userService.findUserById(uid));
+
         }catch (Exception e){
             return ResponseResult.fail(-1,"查询用户异常"+e.getMessage());
         }
@@ -208,6 +217,9 @@ public class HelloWorldController {
          userList.stream().forEach(a-> System.out.println(a.getName()));
          return new Object();
      }*/
+
+
+
 
 
 
